@@ -1,0 +1,134 @@
+fieldset, form, img {
+    border-style: none
+}
+
+html {
+    box-sizing: border-box
+}
+
+*, :after, :before {
+    box-sizing: inherit
+}
+
+.nav-opener {
+    float: right;
+    width: 40px;
+    height: 30px;
+    background: #3771c8;
+    position: relative;
+    border-radius: 3px;
+    text-indent: -9999px;
+    display: none;
+    margin: 24px 0 0
+}
+
+#footer {
+    width: auto;
+    margin-right: 0%;
+    float: right;
+    padding-top: 5px;
+    font-family: 'Lato', Arial, sans-serif;
+    font-size: 13px
+}
+
+form, .url-form .row {
+    position: relative;
+    margin-left: 0;
+    margin-right: 0;
+}
+
+.social-network li a span {
+    float: left;
+    padding: 2px 4px 0;
+    border-left: 1px solid rgba(255, 255, 255, .1);
+}
+
+.url-form {
+    border-radius: 4px;
+    padding: 10px;
+    margin: 0 0 20px;
+}
+
+.url-form {
+    background: rgba(255, 255, 255, .2);
+}
+
+@media only screen and (max-width:767px) {
+    .social-network li a span {
+        display: none;
+    }
+    .url-form {
+        padding: 0;
+        background: 0;
+    }
+}
+
+.url-form .row {
+    padding: 0 0 0 4px;
+}
+
+@media only screen and (max-width:767px) {
+    .url-form .row {
+        float: none;
+        width: 100%;
+        display: block;
+        padding: 0;
+    }
+}
+
+.url-form input[type=text] {
+    height: 75px;
+    width: 100%;
+    border: 0;
+    padding: 10px 87px 10px 16px;
+    font-size: 18px;
+    line-height: 24px;
+    color: #444;
+    border-radius: 4px;
+    outline: 0;
+    display: inline-block;
+}
+
+.url-form input[type=text]::-webkit-input-placeholder {
+    color: #b3b3b3;
+}
+
+.url-form input[type=text]::-moz-placeholder {
+    opacity: 1;
+    color: #b3b3b3;
+}
+
+.url-form input[type=text]:-moz-placeholder {
+    color: #b3b3b3;
+}
+
+.url-form input[type=text]:-ms-input-placeholder {
+    color: #b3b3b3;
+}
+
+.url-form input[type=text].placeholder {
+    color: #b3b3b3;
+}
+
+form button[type=submit] {
+    position: absolute;
+    top: 0;
+    right: 0;
+    border: 0;
+    height: 75px;
+    outline: 0;
+    background: #fa8c35;
+    padding: 12px 12px 8px;
+    color: #fff;
+    font-size: 30px;
+    min-width: 80px;
+    line-height: 36px;
+    font-weight: 700;
+    border-radius: 0 4px 4px 0;
+    -webkit-transition: all .3s ease;
+    transition: all .3s ease;
+}
+
+form button[type=submit]:active, form button[type=submit]:focus, form button[type=submit]:hover {
+    background: #dd6505;
+}
